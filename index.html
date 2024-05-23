@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาจารย์มังกร - บริการทํานายดวงชะตาและดูฮวงจุ้ยออนไลน์</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffefd5;
+            color: #333;
+        }
+        header {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffa000;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #d32f2f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .service-form {
+            background-color: #ffe0b2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .service-form input, .service-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .service-form button {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .service-form button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>อาจารย์มังกร</h1>
+        <p>บริการทํานายดวงชะตาและดูฮวงจุ้ยออนไลน์</p>
+    </header>
+    <nav>
+        <a href="#services">บริการของเรา</a>
+        <a href="#about">เกี่ยวกับอาจารย์มังกร</a>
+        <a href="#contact">ติดต่อเรา</a>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>บริการของเรา</h2>
+            <p>ทํานายดวงชะตาความรัก ความสัมพันธ์ การงาน การเงิน สุขภาพ ด้วยวิชา Bazi, Qi Men, Feng Shui, Ba Zhai, โหราศาสตร์ไทย รวมถึงการให้ฤกษ์ยามกระทําการต่างๆ</p>
+        </section>
+        <section id="about">
+            <h2>เกี่ยวกับอาจารย์มังกร</h2>
+            <p>อาจารย์มังกรมีประสบการณ์ในการใช้วิชาต่างๆ เหล่านี้ช่วยแก้ปัญหาชีวิต ให้กับผู้คนทุกระดับมาเป็นเวลามากกว่าสิบปี มีลูกศิษย์มากมายที่ได้รับการช่วยเหลือและคําปรึกษา</p>
+        </section>
+        <section id="contact">
+            <h2>ติดต่อเรา</h2>
+            <div class="service-form">
+                <h3>แบบฟอร์มรับบริการ</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">ชื่อ:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="birthdate">วันเดือนปีเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="time">เวลาเกิด:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="photo">รูปภาพ (สําหรับดูฮวงจุ้ยออนไลน์):</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <label for="message">ข้อความเพิ่มเติม:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">ส่งข้อมูล</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 อาจารย์มังกร. สงวนลิขสิทธิ์.</p>
+    </footer>
+</body>
+</html>
